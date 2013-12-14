@@ -40,11 +40,20 @@ PRODUCT_PACKAGES += \
 
 # Recovery
 PRODUCT_PACKAGES += \
-    init.recovery.dlx.rc \
+    lpm.rc \
+    charger \
     choice_fn \
-    detect_key \
     offmode_charging \
-    power_test
+    init.recovery.dlx.rc
+
+PRODUCT_PACKAGES += \
+    battery_0.png \
+    battery_1.png \
+    battery_2.png \
+    battery_3.png \
+    battery_4.png \
+    battery_fail.png \
+    battery_full.png
 
 # NFCEE access control
 ifeq ($(TARGET_BUILD_VARIANT),user)
