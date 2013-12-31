@@ -1,7 +1,7 @@
 $(call inherit-product, vendor/slim/config/cdma.mk)
 $(call inherit-product, vendor/slim/config/common_full_phone.mk)
 $(call inherit-product, vendor/slim/config/nfc_enhanced.mk)
-$(call inherit-product, device/motorola/dlx/full_dlx.mk)
+$(call inherit-product, device/htc/dlx/full_dlx.mk)
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1920
