@@ -1,6 +1,6 @@
-$(call inherit-product, vendor/slim/config/cdma.mk)
-$(call inherit-product, vendor/slim/config/common_full_phone.mk)
-$(call inherit-product, vendor/slim/config/nfc_enhanced.mk)
+$(call inherit-product, vendor/ose/config/cdma.mk)
+$(call inherit-product, vendor/ose/config/common_full_phone.mk)
+$(call inherit-product, vendor/ose/config/nfc_enhanced.mk)
 $(call inherit-product, device/htc/dlx/full_dlx.mk)
 
 # Boot animation
@@ -9,7 +9,7 @@ TARGET_SCREEN_WIDTH := 1080
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := dlx
-PRODUCT_NAME := slim_dlx
+PRODUCT_NAME := ose_dlx
 PRODUCT_BRAND := Verizon
 PRODUCT_MODEL := HTC6435LVW
 PRODUCT_MANUFACTURER := HTC
@@ -23,4 +23,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 PRODUCT_GMS_CLIENTID_BASE := android-verizon
 
--include vendor/slim/config/common_versions.mk
+-include vendor/ose/config/common_versions.mk
